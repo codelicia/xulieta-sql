@@ -3,7 +3,9 @@
     "description": "a xulieta linter for SQL fragments",
     "type": "library",
     "require": {
-        "codelicia/xulieta": "1.0.x-dev"
+        "php": "^8.2",
+        "codelicia/xulieta": "1.0.x-dev",
+        "phpmyadmin/sql-parser": "^6.0@dev"
     },
     "require-dev": {
         "phpunit/phpunit": "10.3.x-dev"
