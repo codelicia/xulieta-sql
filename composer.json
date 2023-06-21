@@ -29,5 +29,21 @@
             "codelicia/xulieta": true,
             "dealerdirect/phpcodesniffer-composer-installer": true
         }
+    },
+    "extra": {
+        "xulieta": {
+            "validator": [
+                "Codelicia\\XulietaSql\\Validator"
+            ]
+        }
+    },
+    "scripts": {
+        "phpcbf": "vendor/bin/phpcbf",
+        "phpcs": "vendor/bin/phpcs",
+        "phpunit": "vendor/bin/phpunit",
+        "test": [
+            "@phpcs",
+            "@phpunit"
+        ]
     }
 }

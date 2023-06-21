@@ -7,5 +7,5 @@ declare(strict_types=1);
 return static function (string $params): void {
     $basePath = dirname(__DIR__, 2);
 
-    system("php $basePath/vendor/bin/xulieta check:erromeu $params");
+    system(sprintf('php %s/vendor/bin/xulieta check:erromeu %s', $basePath, $params));
 };
