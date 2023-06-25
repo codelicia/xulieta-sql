@@ -38,12 +38,16 @@
         }
     },
     "scripts": {
-        "phpcbf": "vendor/bin/phpcbf",
-        "phpcs": "vendor/bin/phpcs",
-        "phpunit": "vendor/bin/phpunit",
+        "fix": [
+            "phpcbf"
+        ],
         "test": [
-            "@phpcs",
-            "@phpunit"
+            "phpcs",
+            "phpunit"
         ]
+    },
+    "scripts-descriptions": {
+        "fix": "Fix some detected issues",
+        "test": "Run all tests"
     }
 }
