@@ -3,7 +3,7 @@
     "description": "a xulieta linter for SQL fragments",
     "type": "library",
     "require": {
-        "php": "~8.2.1",
+        "php": "~8.3.0",
         "phpmyadmin/sql-parser": "^6.0@dev"
     },
     "require-dev": {
